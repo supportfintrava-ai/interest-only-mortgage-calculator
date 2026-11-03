@@ -1,0 +1,1896 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Interest Only Mortgage Calculator UK | Residential, Part & Part and Buy-to-Let | Fintrava</title>
+
+<meta name="description" content="Use the UK interest only mortgage calculator to understand residential, part and part and buy to let mortgage payments. Calculate monthly interest, capital repayment and your mortgage balance.">
+
+<meta name="keywords" content="Interest Only Mortgage Calculator, Interest Only Mortgage Calculator UK, Residential Interest Only Mortgage, Part and Part Mortgage Calculator, Buy to Let Interest Only Mortgage Calculator, UK Mortgage Calculator">
+
+<meta name="author" content="Fintrava">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://fintrava.online/uk/interest-only-mortgage-calculator/">
+
+<meta name="theme-color" content="#101d31">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fintrava">
+<meta property="og:title" content="Interest Only Mortgage Calculator UK | Fintrava">
+<meta property="og:description" content="Understand residential interest-only, part-and-part and buy-to-let mortgage payments with our comprehensive UK mortgage guide.">
+<meta property="og:url" content="https://fintrava.online/uk/interest-only-mortgage-calculator/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Interest Only Mortgage Calculator UK">
+<meta name="twitter:description" content="Compare interest-only mortgage payments, capital repayment and buy-to-let mortgage costs.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#101d31;
+  --navy2:#192c44;
+  --teal:#12b8a6;
+  --teal-dark:#078d82;
+  --text:#263548;
+  --muted:#68788c;
+  --bg:#f4f7fa;
+  --white:#fff;
+  --border:#e4eaf0;
+  --soft:#e9f8f5;
+  --gold:#d8b36f;
+  --radius:18px;
+  --shadow:0 12px 36px rgba(16,29,49,.07);
+}
+
+*{box-sizing:border-box}
+
+html{
+ scroll-behavior:smooth;
+ scroll-padding-top:100px;
+}
+
+body{
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
+ font-family:'DM Sans',sans-serif;
+ font-size:16px;
+ line-height:1.8;
+}
+
+a{
+ color:var(--teal-dark);
+ text-decoration:none;
+}
+
+a:hover{text-decoration:underline}
+
+.progress{
+ position:fixed;
+ top:0;
+ left:0;
+ height:3px;
+ width:0;
+ background:var(--teal);
+ z-index:9999;
+}
+
+.top-strip{
+ background:var(--navy);
+ color:#cbd5e1;
+ text-align:center;
+ padding:9px 15px;
+ font-size:11px;
+ letter-spacing:1px;
+}
+
+.header{
+ position:sticky;
+ top:0;
+ z-index:100;
+ background:rgba(255,255,255,.96);
+ border-bottom:1px solid var(--border);
+ backdrop-filter:blur(12px);
+}
+
+.header-inner{
+ max-width:1180px;
+ margin:auto;
+ padding:15px 24px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:20px;
+}
+
+.logo{
+ color:var(--navy);
+ font-family:'Manrope',sans-serif;
+ font-size:26px;
+ font-weight:800;
+ letter-spacing:-1.2px;
+}
+
+.logo span{color:var(--teal-dark)}
+
+.nav{
+ display:flex;
+ align-items:center;
+ gap:24px;
+ font-size:13px;
+ font-weight:700;
+}
+
+.nav a{color:var(--navy)}
+
+.hero{
+ position:relative;
+ overflow:hidden;
+ background:
+ radial-gradient(circle at 85% 15%,rgba(18,184,166,.22),transparent 35%),
+ radial-gradient(circle at 5% 100%,rgba(216,179,111,.12),transparent 35%),
+ linear-gradient(125deg,#101d31,#1a3049 60%,#10404a);
+ color:#fff;
+ padding:83px 24px 100px;
+}
+
+.hero-inner{
+ max-width:1180px;
+ margin:auto;
+ position:relative;
+}
+
+.breadcrumb{
+ color:#bac9d8;
+ font-size:12px;
+ margin-bottom:28px;
+}
+
+.breadcrumb a{color:#75dfd1}
+
+.eyebrow{
+ display:inline-block;
+ border:1px solid rgba(117,223,209,.35);
+ background:rgba(18,184,166,.10);
+ color:#82e3d6;
+ border-radius:50px;
+ padding:6px 13px;
+ font-size:10px;
+ font-weight:800;
+ letter-spacing:1.3px;
+ text-transform:uppercase;
+ margin-bottom:19px;
+}
+
+h1{
+ font-family:'Manrope',sans-serif;
+ font-size:clamp(36px,5.5vw,63px);
+ line-height:1.16;
+ letter-spacing:-2px;
+ max-width:900px;
+ margin:0 0 22px;
+}
+
+h1 span{color:#6bdfd0}
+
+.hero-description{
+ max-width:790px;
+ color:#c8d6e3;
+ font-size:17px;
+ margin:0 0 27px;
+ line-height:1.85;
+}
+
+.hero-meta{
+ display:flex;
+ flex-wrap:wrap;
+ gap:20px;
+ color:#c1cedb;
+ font-size:12px;
+}
+
+.hero-meta strong{color:#fff}
+
+.container{
+ max-width:1180px;
+ margin:auto;
+ padding:0 24px;
+}
+
+.layout{
+ display:grid;
+ grid-template-columns:minmax(0,1fr) 285px;
+ gap:30px;
+ align-items:start;
+ margin-top:-35px;
+ position:relative;
+ z-index:2;
+}
+
+.article{
+ background:white;
+ border:1px solid var(--border);
+ border-radius:var(--radius);
+ box-shadow:var(--shadow);
+ padding:clamp(24px,5vw,54px);
+ min-width:0;
+}
+
+.article h2{
+ font-family:'Manrope',sans-serif;
+ font-size:clamp(25px,3vw,32px);
+ line-height:1.35;
+ letter-spacing:-.8px;
+ color:var(--navy);
+ margin:53px 0 18px;
+}
+
+.article h2:first-of-type{margin-top:34px}
+
+.article h3{
+ font-family:'Manrope',sans-serif;
+ color:var(--navy);
+ font-size:20px;
+ line-height:1.45;
+ margin:31px 0 12px;
+}
+
+.article p{margin:0 0 19px}
+
+.article ul,.article ol{
+ padding-left:23px;
+ margin:13px 0 24px;
+}
+
+.article li{margin-bottom:9px;padding-left:4px}
+
+.intro{
+ color:#42546a;
+ font-size:18px;
+ line-height:1.9;
+}
+
+.highlight{
+ background:var(--soft);
+ border-left:4px solid var(--teal);
+ border-radius:0 12px 12px 0;
+ padding:21px 24px;
+ margin:27px 0;
+}
+
+.highlight strong{color:#087d72}
+
+.warning{
+ background:#fff8ec;
+ border-left:4px solid #d8a74e;
+ border-radius:0 12px 12px 0;
+ padding:21px 24px;
+ margin:25px 0;
+}
+
+.calculator-cards{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:14px;
+ margin:28px 0;
+}
+
+.calculator-card{
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:15px;
+ padding:21px 17px;
+ box-shadow:0 5px 18px rgba(16,29,49,.04);
+ display:flex;
+ flex-direction:column;
+}
+
+.card-number{
+ width:35px;
+ height:35px;
+ display:grid;
+ place-items:center;
+ border-radius:10px;
+ background:var(--soft);
+ color:var(--teal-dark);
+ font-weight:800;
+ margin-bottom:13px;
+}
+
+.calculator-card h3{
+ font-size:16px;
+ margin:0 0 9px;
+}
+
+.calculator-card p{
+ color:var(--muted);
+ font-size:12px;
+ line-height:1.7;
+ margin:0 0 15px;
+}
+
+.card-link{
+ margin-top:auto;
+ font-size:12px;
+ font-weight:800;
+}
+
+.table-wrap{
+ overflow-x:auto;
+ border:1px solid var(--border);
+ border-radius:12px;
+ margin:25px 0;
+}
+
+table{
+ border-collapse:collapse;
+ width:100%;
+ min-width:480px;
+ font-size:14px;
+}
+
+th{
+ background:var(--navy);
+ color:#fff;
+ padding:14px;
+ text-align:left;
+}
+
+td{
+ padding:14px;
+ border-bottom:1px solid var(--border);
+}
+
+tbody tr:nth-child(even){background:#f6f9fb}
+tbody tr:last-child td{border-bottom:0}
+
+.formula{
+ background:var(--navy);
+ color:#dbe8f2;
+ padding:23px;
+ border-radius:13px;
+ margin:24px 0;
+ overflow-wrap:anywhere;
+}
+
+.formula code{
+ color:#7de0d3;
+ font-size:14px;
+}
+
+.step-list{
+ list-style:none;
+ padding:0!important;
+ counter-reset:steps;
+}
+
+.step-list li{
+ counter-increment:steps;
+ position:relative;
+ padding:0 0 20px 52px;
+ border-bottom:1px solid var(--border);
+ margin-bottom:17px;
+}
+
+.step-list li:before{
+ content:counter(steps);
+ position:absolute;
+ left:0;
+ top:0;
+ width:35px;
+ height:35px;
+ display:grid;
+ place-items:center;
+ border-radius:10px;
+ background:var(--soft);
+ color:var(--teal-dark);
+ font-weight:800;
+}
+
+.toc{
+ position:sticky;
+ top:98px;
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:15px;
+ padding:23px;
+ box-shadow:var(--shadow);
+}
+
+.toc h3{
+ color:var(--navy);
+ font-family:'Manrope',sans-serif;
+ font-size:16px;
+ margin:0 0 15px;
+}
+
+.toc ol{
+ padding-left:19px;
+ margin:0;
+ font-size:12px;
+ line-height:1.7;
+}
+
+.toc li{margin-bottom:9px}
+.toc a{color:#53657a}
+
+.faq{
+ border-bottom:1px solid var(--border);
+ padding:18px 0;
+}
+
+.faq summary{
+ color:var(--navy);
+ font-weight:700;
+ cursor:pointer;
+ list-style:none;
+ position:relative;
+ padding-right:28px;
+}
+
+.faq summary::-webkit-details-marker{display:none}
+
+.faq summary:after{
+ content:'+';
+ position:absolute;
+ right:0;
+ top:-3px;
+ color:var(--teal-dark);
+ font-size:22px;
+}
+
+.faq[open] summary:after{content:'−'}
+
+.faq p{
+ margin:12px 0 0;
+ color:#59697d;
+}
+
+.related{
+ background:#f4f8fa;
+ border:1px solid var(--border);
+ border-radius:14px;
+ padding:23px;
+ margin:32px 0;
+}
+
+.related h3{margin-top:0}
+
+.related-link{
+ display:block;
+ background:white;
+ border:1px solid var(--border);
+ padding:14px 16px;
+ border-radius:10px;
+ margin:12px 0;
+ font-weight:700;
+ font-size:14px;
+}
+
+.sources{
+ background:#f4f8fa;
+ border-radius:13px;
+ padding:22px;
+ margin-top:35px;
+}
+
+.sources h3{margin-top:0}
+
+.sources li{overflow-wrap:anywhere}
+
+.disclaimer{
+ background:#f0f4f7;
+ border-radius:12px;
+ padding:20px;
+ color:#617185;
+ font-size:12px;
+ margin-top:32px;
+}
+
+.footer{
+ margin-top:75px;
+ padding:45px 24px;
+ background:var(--navy);
+ color:#bdcad8;
+ text-align:center;
+}
+
+.footer .logo{color:#fff}
+
+.footer p{
+ font-size:12px;
+ max-width:650px;
+ margin:12px auto;
+}
+
+.footer a{color:#75dfd1}
+
+@media(max-width:900px){
+ .layout{grid-template-columns:1fr}
+ .toc{position:static;grid-row:1}
+ .toc ol{columns:2;column-gap:25px}
+}
+
+@media(max-width:650px){
+ body{font-size:15px}
+ .header-inner{padding:13px 17px}
+ .nav{display:none}
+ .hero{padding:58px 19px 78px}
+ .hero-description{font-size:15px}
+ .container{padding:0 12px}
+ .article{padding:23px 18px}
+ .calculator-cards{grid-template-columns:1fr}
+ .toc ol{columns:1}
+ .hero-meta{gap:10px 15px}
+ .article h2{margin-top:43px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://fintrava.online/#organization",
+      "name":"Fintrava",
+      "url":"https://fintrava.online/"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://fintrava.online/#website",
+      "name":"Fintrava",
+      "url":"https://fintrava.online/",
+      "publisher":{"@id":"https://fintrava.online/#organization"}
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://fintrava.online/uk/interest-only-mortgage-calculator/#webpage",
+      "url":"https://fintrava.online/uk/interest-only-mortgage-calculator/",
+      "name":"Interest Only Mortgage Calculator UK",
+      "description":"A UK guide to residential interest-only, part-and-part and buy-to-let mortgages.",
+      "isPartOf":{"@id":"https://fintrava.online/#website"},
+      "inLanguage":"en-GB",
+      "breadcrumb":{"@id":"https://fintrava.online/uk/interest-only-mortgage-calculator/#breadcrumb"}
+    },
+    {
+      "@type":"Article",
+      "headline":"Interest Only Mortgage Calculator UK: Residential, Part and Part and Buy-to-Let",
+      "description":"Understand monthly interest payments, capital repayment, repayment strategies and UK mortgage considerations.",
+      "mainEntityOfPage":{"@id":"https://fintrava.online/uk/interest-only-mortgage-calculator/#webpage"},
+      "author":{"@type":"Organization","name":"Fintrava"},
+      "publisher":{"@id":"https://fintrava.online/#organization"},
+      "inLanguage":"en-GB",
+      "about":[
+        {"@type":"Thing","name":"Interest-only mortgage"},
+        {"@type":"Thing","name":"Part-and-part mortgage"},
+        {"@type":"Thing","name":"Buy-to-let mortgage"}
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://fintrava.online/uk/interest-only-mortgage-calculator/#breadcrumb",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"Fintrava",
+          "item":"https://fintrava.online/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"UK Mortgage Calculators",
+          "item":"https://fintrava.online/uk/"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "name":"Interest Only Mortgage Calculator",
+          "item":"https://fintrava.online/uk/interest-only-mortgage-calculator/"
+        }
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is an interest-only mortgage?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"An interest-only mortgage requires monthly payments to cover the interest charged on the loan. The capital borrowed remains outstanding and must be repaid separately by the end of the mortgage term."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"How do I calculate monthly interest-only mortgage payments?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Multiply the outstanding mortgage balance by the annual interest rate and divide by 12 for a simplified monthly estimate."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"What is a part-and-part mortgage?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"A part-and-part mortgage combines a capital repayment portion with an interest-only portion. The repayment portion reduces capital over time, while the interest-only portion remains outstanding until repaid."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"What is a buy-to-let interest-only mortgage?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"A buy-to-let interest-only mortgage is a property loan for a rental investment where monthly payments generally cover interest and the capital must be repaid at the end of the term."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Do I need a repayment plan for an interest-only mortgage?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"You need a credible plan to repay the outstanding capital by the end of the mortgage term. Lenders assess repayment strategies according to applicable rules and their lending criteria."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Is an interest-only mortgage cheaper than a repayment mortgage?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Monthly payments are usually lower because they cover interest rather than capital and interest. However, the capital remains outstanding and total borrowing costs can be higher over the term."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Can I switch from interest-only to repayment?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"You can ask your lender about switching to a repayment or part-and-part arrangement. Approval, affordability assessments and product conditions may apply."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="top-strip">
+UK MORTGAGE EDUCATION &nbsp; | &nbsp; SMARTER FINANCIAL DECISIONS
+</div>
+
+<header class="header">
+ <div class="header-inner">
+  <a class="logo" href="https://fintrava.online/">fintrava<span>.</span></a>
+  <nav class="nav" aria-label="Main navigation">
+   <a href="https://fintrava.online/">Home</a>
+   <a href="https://fintrava.online/uk/">UK Finance</a>
+   <a href="#mortgage-types">Mortgage Types</a>
+   <a href="#calculator-guide">Calculator Guide</a>
+   <a href="#faqs">FAQs</a>
+  </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+
+  <div class="breadcrumb">
+   <a href="https://fintrava.online/">Home</a>
+   &nbsp; / &nbsp;
+   <a href="https://fintrava.online/uk/">UK Finance</a>
+   &nbsp; / &nbsp;
+   Interest Only Mortgage Calculator
+  </div>
+
+  <span class="eyebrow">UK Mortgage Calculator & Guide</span>
+
+  <h1>Interest Only Mortgage <span>Calculator UK</span></h1>
+
+  <p class="hero-description">
+   Understand your monthly mortgage interest payments,
+   outstanding capital and repayment options. Explore
+   residential interest-only mortgages, part-and-part
+   mortgages and buy-to-let interest-only mortgages
+   with this comprehensive UK mortgage guide.
+  </p>
+
+  <div class="hero-meta">
+   <span>By <strong>Fintrava</strong></span>
+   <span>UK Mortgage Education</span>
+   <span>Updated: November 2026</span>
+  </div>
+
+ </div>
+</section>
+
+<main class="container">
+<div class="layout">
+
+<article class="article">
+
+<p class="intro">
+An interest-only mortgage can offer lower monthly repayments
+compared with a traditional capital repayment mortgage.
+However, there is an important difference: your monthly
+payments cover the interest charged on the loan, while
+the original amount borrowed remains outstanding.
+</p>
+
+<p>
+Whether you are buying your own home, considering a
+part-and-part mortgage or financing a rental property,
+understanding your mortgage structure is essential.
+</p>
+
+<p>
+The <strong>Interest Only Mortgage Calculator UK</strong>
+helps you understand the relationship between your
+mortgage balance, interest rate, monthly interest
+payments and outstanding capital.
+</p>
+
+<div class="highlight">
+<strong>Important principle:</strong> Paying only the
+interest does not automatically reduce your mortgage
+debt. You still need a credible strategy to repay the
+outstanding capital by the end of the mortgage term.
+</div>
+
+<h2 id="mortgage-types">
+1. Explore the Three Mortgage Calculator Options
+</h2>
+
+<p>
+Interest-only borrowing can be structured in different
+ways depending on the property, borrower and mortgage
+agreement. These three categories have different
+repayment requirements.
+</p>
+
+<div class="calculator-cards">
+
+ <div class="calculator-card">
+  <div class="card-number">01</div>
+  <h3>Residential Interest-Only</h3>
+  <p>
+   Understand interest payments on a mortgage for
+   a property you intend to occupy as your home.
+   Review the outstanding capital and repayment plan.
+  </p>
+  <a class="card-link" href="#residential">
+   Explore residential mortgages →
+  </a>
+ </div>
+
+ <div class="calculator-card">
+  <div class="card-number">02</div>
+  <h3>Part-and-Part Mortgage</h3>
+  <p>
+   Compare the interest-only portion with the
+   capital repayment portion and understand
+   how each affects monthly payments.
+  </p>
+  <a class="card-link" href="#part-and-part">
+   Explore part-and-part mortgages →
+  </a>
+ </div>
+
+ <div class="calculator-card">
+  <div class="card-number">03</div>
+  <h3>Buy-to-Let Interest-Only</h3>
+  <p>
+   Explore interest costs on a mortgage for
+   a rental property and understand the
+   outstanding loan capital.
+  </p>
+  <a class="card-link" href="#buy-to-let">
+   Explore buy-to-let mortgages →
+  </a>
+ </div>
+
+</div>
+
+<h2 id="what-is">
+2. What Is an Interest-Only Mortgage?
+</h2>
+
+<p>
+An interest-only mortgage is a type of home loan where
+your regular monthly mortgage payment covers the
+interest charged by the lender rather than repaying
+the borrowed capital.
+</p>
+
+<p>
+For example, if you borrow £200,000 at an annual
+interest rate of 5%, a simplified interest-only
+calculation gives a monthly interest payment of
+approximately £833.33.
+</p>
+
+<p>
+However, the £200,000 capital remains outstanding.
+At the end of the mortgage term, you must repay
+that amount through an appropriate repayment
+strategy or another agreed arrangement.
+</p>
+
+<h3>Interest-only vs repayment mortgage</h3>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Interest-Only</th>
+<th>Repayment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monthly payment</td>
+<td>Interest only</td>
+<td>Capital and interest</td>
+</tr>
+<tr>
+<td>Capital reduction</td>
+<td>Not through normal interest payments</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Outstanding balance</td>
+<td>Generally remains unchanged</td>
+<td>Gradually decreases</td>
+</tr>
+<tr>
+<td>End of mortgage term</td>
+<td>Capital still needs repayment</td>
+<td>Normally fully repaid</td>
+</tr>
+<tr>
+<td>Repayment strategy</td>
+<td>Essential</td>
+<td>Built into monthly payments</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>
+For more information, read the official
+<a href="https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+target="_blank" rel="noopener noreferrer">
+MoneyHelper guide to mortgage repayment options
+</a>.
+</p>
+
+<h2 id="how-calculator-works">
+3. How Does an Interest-Only Mortgage Calculator Work?
+</h2>
+
+<p>
+An interest-only mortgage calculator estimates
+the monthly interest payment using the outstanding
+mortgage balance and annual interest rate.
+</p>
+
+<h3>Information required</h3>
+
+<ul>
+<li>Outstanding mortgage amount.</li>
+<li>Annual mortgage interest rate.</li>
+<li>Remaining mortgage term.</li>
+<li>Mortgage repayment structure.</li>
+<li>Capital repayment amount, where applicable.</li>
+<li>Additional payments, if your calculator supports them.</li>
+</ul>
+
+<h3>What results should you understand?</h3>
+
+<ul>
+<li>Estimated monthly interest payment.</li>
+<li>Estimated annual interest cost.</li>
+<li>Outstanding capital.</li>
+<li>Capital repayment portion.</li>
+<li>Total monthly payment for a part-and-part mortgage.</li>
+<li>Capital remaining at the end of the mortgage term.</li>
+</ul>
+
+<h2 id="formula">
+4. Interest-Only Mortgage Calculation Formula
+</h2>
+
+<p>
+The basic interest-only mortgage formula is relatively
+simple. It estimates the monthly interest based on
+the outstanding capital and annual interest rate.
+</p>
+
+<div class="formula">
+<strong>Monthly Interest Payment</strong>
+<br><br>
+<code>
+Monthly Interest = (Mortgage Balance × Annual Interest Rate) ÷ 12
+</code>
+<br><br>
+<strong>Example</strong>
+<br><br>
+<code>
+Mortgage Balance = £200,000
+<br>
+Annual Interest Rate = 5%
+<br>
+Monthly Interest = (£200,000 × 0.05) ÷ 12
+<br>
+Monthly Interest = £833.33
+</code>
+</div>
+
+<p>
+This is a simplified estimate assuming a constant
+balance and annual rate with monthly interest
+calculation. Actual lender payments may differ
+because of daily interest, payment dates, fees
+and product-specific terms.
+</p>
+
+<h2 id="residential">
+5. Residential Interest-Only Mortgage Calculator
+</h2>
+
+<p>
+A residential interest-only mortgage is a mortgage
+secured against a property that you intend to use
+as your main home or residential property.
+</p>
+
+<p>
+Instead of repaying the borrowed capital through
+every monthly payment, you pay the interest due.
+The outstanding capital must be repaid by the
+end of the agreed mortgage term.
+</p>
+
+<h3>Example: Residential interest-only mortgage</h3>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Mortgage detail</th>
+<th>Illustrative value</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Mortgage amount</td><td>£250,000</td></tr>
+<tr><td>Interest rate</td><td>5%</td></tr>
+<tr><td>Mortgage term</td><td>25 years</td></tr>
+<tr><td>Monthly interest</td><td>£1,041.67</td></tr>
+<tr><td>Capital repaid through interest payments</td><td>£0</td></tr>
+<tr><td>Capital remaining at term end</td><td>£250,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+This illustration assumes the interest rate and
+outstanding balance remain unchanged for the entire
+term. It excludes fees and any separate capital
+repayments.
+</p>
+
+<h3>Who might consider residential interest-only?</h3>
+
+<p>
+Some borrowers may consider interest-only arrangements
+where their financial circumstances and repayment
+strategy meet the lender's requirements.
+</p>
+
+<p>
+Lenders assess affordability and the proposed
+repayment strategy. A borrower cannot assume
+that an interest-only residential mortgage
+will be available simply because the monthly
+interest payment is affordable.
+</p>
+
+<div class="warning">
+<strong>Capital repayment warning:</strong>
+A residential interest-only mortgage does not
+automatically pay off your home. You need a
+credible plan to repay the full outstanding
+capital by the end of the mortgage term.
+</div>
+
+<h2 id="part-and-part">
+6. Part-and-Part Mortgage Calculator
+</h2>
+
+<p>
+A part-and-part mortgage combines two repayment
+structures within one mortgage:
+</p>
+
+<ul>
+<li><strong>Capital repayment portion:</strong>
+You repay part of the borrowed capital and interest
+through regular monthly payments.</li>
+<li><strong>Interest-only portion:</strong>
+You pay interest on the remaining portion while
+the capital remains outstanding.</li>
+</ul>
+
+<p>
+This structure allows borrowers to divide the
+mortgage between a repayment component and
+an interest-only component.
+</p>
+
+<h3>How does a part-and-part mortgage work?</h3>
+
+<p>
+Imagine you borrow £200,000 and split the mortgage
+into two equal portions.
+</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Mortgage portion</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Capital repayment portion</td><td>£100,000</td></tr>
+<tr><td>Interest-only portion</td><td>£100,000</td></tr>
+<tr><td>Total mortgage</td><td>£200,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+The first £100,000 is repaid gradually through
+capital and interest payments. The other £100,000
+continues to incur interest without being
+repaid through its normal interest-only payment.
+</p>
+
+<h3>Part-and-part calculation example</h3>
+
+<p>
+Assume a £200,000 mortgage at 5% annual interest
+over 25 years, split equally between repayment
+and interest-only.
+</p>
+
+<div class="formula">
+<strong>Interest-only portion</strong>
+<br><br>
+<code>
+£100,000 × 5% ÷ 12 = £416.67 per month
+</code>
+<br><br>
+<strong>Repayment portion</strong>
+<br><br>
+<code>
+Monthly repayment on £100,000 over 25 years
+at 5% ≈ £584.59
+</code>
+<br><br>
+<strong>Combined estimated payment</strong>
+<br><br>
+<code>
+£416.67 + £584.59 = £1,001.26 per month
+</code>
+</div>
+
+<p>
+At the end of the 25-year term, assuming all
+scheduled repayment payments have been made,
+the repayment portion should be cleared, but
+the £100,000 interest-only capital will still
+need to be repaid.
+</p>
+
+<p>
+This is an illustrative calculation using a
+constant monthly interest-rate model. It excludes
+fees and lender-specific calculation differences.
+</p>
+
+<h3>Advantages and considerations</h3>
+
+<ul>
+<li>Combines capital reduction with lower payments
+than a fully repayment-based mortgage may require.</li>
+<li>Can provide flexibility in structuring the
+borrowed capital.</li>
+<li>Leaves an outstanding interest-only balance
+that still needs a repayment strategy.</li>
+<li>May require lender approval and affordability
+assessment when changing an existing mortgage.</li>
+</ul>
+
+<h2 id="buy-to-let">
+7. Buy-to-Let Interest-Only Mortgage Calculator
+</h2>
+
+<p>
+A buy-to-let mortgage is designed for property
+purchased primarily to rent to tenants rather
+than to occupy as your own home.
+</p>
+
+<p>
+Some landlords use interest-only mortgages
+because the monthly payments can be lower
+than those on an equivalent capital repayment
+mortgage.
+</p>
+
+<p>
+However, lower monthly payments do not remove
+the obligation to repay the original capital.
+The outstanding mortgage balance remains
+payable at the end of the agreed term.
+</p>
+
+<h3>Buy-to-let interest calculation example</h3>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Mortgage detail</th>
+<th>Illustrative value</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Property mortgage</td><td>£180,000</td></tr>
+<tr><td>Annual interest rate</td><td>5.5%</td></tr>
+<tr><td>Mortgage term</td><td>20 years</td></tr>
+<tr><td>Monthly interest</td><td>£825</td></tr>
+<tr><td>Annual interest</td><td>£9,900</td></tr>
+<tr><td>Outstanding capital at term end</td><td>£180,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>
+The example assumes an unchanged interest rate
+and mortgage balance throughout the term.
+It does not include property maintenance, tax,
+insurance, letting-agent costs or other expenses.
+</p>
+
+<h3>What should landlords consider?</h3>
+
+<ul>
+<li>Expected rental income.</li>
+<li>Mortgage interest costs.</li>
+<li>Property maintenance and repairs.</li>
+<li>Insurance and letting-agent fees.</li>
+<li>Periods when the property may be vacant.</li>
+<li>Interest rate changes.</li>
+<li>Rental income tax treatment.</li>
+<li>How the mortgage capital will be repaid.</li>
+</ul>
+
+<h3>Rental income is not the same as profit</h3>
+
+<p>
+A property generating £1,500 in monthly rent
+does not necessarily produce £1,500 in profit.
+Mortgage payments, repairs, insurance, tax,
+management expenses and empty periods can
+all affect the final result.
+</p>
+
+<p>
+Landlords should also check lender-specific
+rental income assessment and interest coverage
+requirements. These can differ by lender and
+mortgage product.
+</p>
+
+<div class="warning">
+<strong>Important:</strong> Do not judge a buy-to-let
+investment only by comparing rent with the
+monthly interest payment. Assess the full
+property cash flow, tax position, financing
+conditions and capital repayment strategy.
+</div>
+
+<h2 id="compare">
+8. Residential vs Part-and-Part vs Buy-to-Let
+</h2>
+
+<p>
+Although all three mortgage structures can
+involve interest-only borrowing, they serve
+different property and financing purposes.
+</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Residential</th>
+<th>Part-and-Part</th>
+<th>Buy-to-Let</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main purpose</td>
+<td>Own home</td>
+<td>Mixed repayment</td>
+<td>Rental property</td>
+</tr>
+<tr>
+<td>Capital repayment</td>
+<td>Interest-only balance</td>
+<td>Partial</td>
+<td>Often interest-only</td>
+</tr>
+<tr>
+<td>Interest payments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Outstanding capital</td>
+<td>Must be repaid</td>
+<td>Remaining IO portion</td>
+<td>Must be repaid</td>
+</tr>
+<tr>
+<td>Rental income assessment</td>
+<td>Not normally relevant</td>
+<td>Depends on property use</td>
+<td>Often relevant</td>
+</tr>
+<tr>
+<td>Repayment strategy</td>
+<td>Required</td>
+<td>Required for IO portion</td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="repayment-plan">
+9. How Do You Repay an Interest-Only Mortgage?
+</h2>
+
+<p>
+The most important part of an interest-only
+mortgage is having a credible repayment strategy.
+You need to arrange how the outstanding capital
+will be repaid before the mortgage term ends.
+</p>
+
+<p>
+Depending on the mortgage product and lender,
+possible repayment resources may include:
+</p>
+
+<ul>
+<li>Cash savings.</li>
+<li>Stocks and shares ISAs.</li>
+<li>Other investments.</li>
+<li>Pension-related funds where permitted and suitable.</li>
+<li>Sale of another property or asset.</li>
+<li>Other acceptable repayment resources.</li>
+</ul>
+
+<p>
+Lenders decide which repayment strategies they
+will accept. A projected inheritance or a
+speculative increase in property value should
+not be treated as a guaranteed repayment plan.
+</p>
+
+<h3>How much might you need to save?</h3>
+
+<p>
+If you need to accumulate a target amount by
+the end of your mortgage, you can estimate
+the monthly savings required.
+</p>
+
+<p>
+For example, if you have a £100,000 interest-only
+balance and 20 years remaining, you need to
+consider how to build sufficient funds to meet
+that obligation.
+</p>
+
+<p>
+The amount you need to save depends on the
+starting savings balance, expected returns,
+fees, tax treatment and investment risk.
+</p>
+
+<div class="warning">
+Investment returns are not guaranteed. The
+value of investments can fall as well as rise.
+Review your repayment strategy regularly
+rather than assuming it will automatically
+cover the mortgage.
+</div>
+
+<h2 id="risks">
+10. Risks of Interest-Only Mortgages
+</h2>
+
+<p>
+Interest-only mortgages can offer lower monthly
+payments, but they also create an important
+long-term repayment responsibility.
+</p>
+
+<h3>Outstanding capital risk</h3>
+
+<p>
+The original capital does not disappear.
+If you borrow £250,000 and only make interest
+payments, you may still owe £250,000 at the
+end of the mortgage term.
+</p>
+
+<h3>Investment performance risk</h3>
+
+<p>
+If your repayment strategy relies on investments,
+the final value may be lower than expected.
+You could face a shortfall when the mortgage
+becomes due.
+</p>
+
+<h3>Remortgage risk</h3>
+
+<p>
+You should not assume that you will automatically
+qualify for a new mortgage at the end of your
+existing deal. Future lending criteria,
+income and property values may affect your
+options.
+</p>
+
+<h3>Property value risk</h3>
+
+<p>
+If property values fall while your mortgage
+capital remains unchanged, your equity may
+decrease. This can make refinancing or selling
+the property more difficult.
+</p>
+
+<h2 id="switch">
+11. Can You Switch from Interest-Only to Repayment?
+</h2>
+
+<p>
+Some borrowers with an existing interest-only
+mortgage may want to switch to a repayment
+mortgage or a part-and-part arrangement.
+</p>
+
+<p>
+You should contact your mortgage provider
+to discuss the options available under your
+current agreement.
+</p>
+
+<p>
+Your lender may assess:
+</p>
+
+<ul>
+<li>Your current income and affordability.</li>
+<li>Your outstanding mortgage balance.</li>
+<li>Your remaining mortgage term.</li>
+<li>Your age and expected retirement plans.</li>
+<li>Your proposed monthly repayment amount.</li>
+<li>Your mortgage product and applicable fees.</li>
+</ul>
+
+<p>
+An increase in monthly payments may require
+an affordability assessment. Approval is
+not guaranteed.
+</p>
+
+<h2 id="calculator-guide">
+12. How to Use the Fintrava Interest-Only Calculator
+</h2>
+
+<p>
+To understand your mortgage costs, select
+the relevant mortgage structure and enter
+the details of your borrowing.
+</p>
+
+<ol class="step-list">
+<li>
+<strong>Choose your mortgage type.</strong><br>
+Select residential interest-only, part-and-part
+or buy-to-let, depending on the purpose and
+structure of your mortgage.
+</li>
+<li>
+<strong>Enter your mortgage amount.</strong><br>
+Use the current outstanding balance where
+you are calculating an existing mortgage.
+</li>
+<li>
+<strong>Enter the annual interest rate.</strong><br>
+Use the interest rate applicable to your
+mortgage or the rate you want to test.
+</li>
+<li>
+<strong>Enter the mortgage term.</strong><br>
+Specify the number of years or months
+remaining.
+</li>
+<li>
+<strong>Enter the repayment split if applicable.</strong><br>
+For part-and-part, specify how much of
+the mortgage is interest-only and how
+much is capital repayment.
+</li>
+<li>
+<strong>Review your estimated results.</strong><br>
+Compare monthly interest, capital repayment
+and any remaining mortgage balance.
+</li>
+</ol>
+
+<div class="highlight">
+Use your actual mortgage figures whenever
+possible. An estimate is only as useful
+as the information and assumptions used
+to produce it.
+</div>
+
+<h2 id="interest-vs-repayment">
+13. Interest-Only vs Full Repayment: Which Is Better?
+</h2>
+
+<p>
+Neither structure is automatically better
+for every borrower. The appropriate mortgage
+depends on your financial circumstances,
+property objectives and repayment strategy.
+</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Consideration</th>
+<th>Interest-Only</th>
+<th>Full Repayment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial monthly payment</td>
+<td>Generally lower</td>
+<td>Generally higher</td>
+</tr>
+<tr>
+<td>Capital reduction</td>
+<td>Separate strategy needed</td>
+<td>Built into payments</td>
+</tr>
+<tr>
+<td>End-of-term balance</td>
+<td>Capital remains due</td>
+<td>Normally zero</td>
+</tr>
+<tr>
+<td>Long-term planning</td>
+<td>Requires a separate plan</td>
+<td>Scheduled capital repayment</td>
+</tr>
+<tr>
+<td>Investment risk</td>
+<td>May apply to repayment strategy</td>
+<td>Depends on separate investments</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>
+The lower monthly cost of an interest-only
+mortgage should not be confused with a
+lower total cost of borrowing. You need
+to consider all interest payments, fees
+and the final capital repayment.
+</p>
+
+<h2 id="related-calculators">
+14. Explore More Mortgage Calculators on Fintrava
+</h2>
+
+<p>
+Understanding one mortgage calculation is
+only part of making a well-informed financial
+decision. Comparing different mortgage
+repayment strategies can help you see how
+your choices affect long-term borrowing costs.
+</p>
+
+<div class="related">
+<h3>More UK Mortgage Tools</h3>
+
+<a class="related-link"
+href="https://fintrava.online/uk/mortgage-overpayment-calculator/">
+Mortgage Overpayment Calculator UK
+</a>
+
+<p>
+Explore how regular monthly overpayments
+or one-off lump sums may reduce your
+mortgage balance, interest costs and
+remaining repayment term.
+</p>
+
+<a class="related-link"
+href="https://fintrava.online/uk/interest-only-mortgage-calculator/">
+Interest Only Mortgage Calculator UK
+</a>
+
+<p>
+Return to the Fintrava interest-only
+mortgage calculator to explore residential,
+part-and-part and buy-to-let mortgage
+calculations.
+</p>
+
+<a class="related-link"
+href="https://fintrava.online/">
+Explore All Financial Calculators on Fintrava
+</a>
+
+<p>
+Visit Fintrava to explore practical financial
+tools and educational resources designed
+to help you understand important money
+decisions.
+</p>
+</div>
+
+<h2 id="faqs">
+15. Frequently Asked Questions
+</h2>
+
+<div class="faq">
+<details>
+<summary>What is an interest-only mortgage?</summary>
+<p>
+An interest-only mortgage is a loan where your
+regular monthly payments cover the interest
+charged on the outstanding capital. You must
+repay the capital separately by the end of
+the mortgage term.
+</p>
+</details>
+
+<details>
+<summary>How do I calculate monthly interest-only mortgage payments?</summary>
+<p>
+Multiply the outstanding mortgage balance
+by the annual interest rate and divide by
+12 for a simplified estimate. Actual
+lender calculations may differ.
+</p>
+</details>
+
+<details>
+<summary>What is a residential interest-only mortgage?</summary>
+<p>
+It is an interest-only mortgage secured
+against a residential property that the
+borrower intends to occupy as a home.
+The outstanding capital still needs to
+be repaid at the end of the term.
+</p>
+</details>
+
+<details>
+<summary>What is a part-and-part mortgage?</summary>
+<p>
+A part-and-part mortgage combines a
+capital repayment portion and an
+interest-only portion within the same
+mortgage. The interest-only portion
+remains outstanding until it is repaid.
+</p>
+</details>
+
+<details>
+<summary>What is a buy-to-let interest-only mortgage?</summary>
+<p>
+It is a mortgage used to finance a rental
+property where the monthly mortgage
+payment generally covers interest,
+rather than repaying the full capital.
+The borrowed capital remains due.
+</p>
+</details>
+
+<details>
+<summary>Is an interest-only mortgage cheaper?</summary>
+<p>
+Its monthly payment is generally lower
+than an equivalent repayment mortgage
+because the monthly payment does not
+include scheduled capital repayment.
+However, the capital remains outstanding
+and the total borrowing cost can be higher.
+</p>
+</details>
+
+<details>
+<summary>Do I need a repayment strategy?</summary>
+<p>
+Yes. A credible repayment strategy is
+important because the outstanding capital
+must be repaid by the end of the mortgage
+term. Lenders assess repayment strategies
+under applicable lending rules.
+</p>
+</details>
+
+<details>
+<summary>Can I change from interest-only to part-and-part?</summary>
+<p>
+You can ask your lender whether it permits
+a change to a part-and-part structure.
+Affordability checks, product conditions
+and other requirements may apply.
+</p>
+</details>
+
+<details>
+<summary>Can I make overpayments on an interest-only mortgage?</summary>
+<p>
+Some lenders permit capital overpayments
+on interest-only mortgages. Check your
+mortgage conditions, annual allowances
+and any applicable early repayment charges.
+</p>
+</details>
+
+<details>
+<summary>What happens when an interest-only mortgage ends?</summary>
+<p>
+The outstanding capital becomes due.
+You need to repay it using your agreed
+repayment resources or another arrangement
+accepted by the lender.
+</p>
+</details>
+
+<details>
+<summary>Does buy-to-let rental income automatically cover the mortgage?</summary>
+<p>
+No. Rental income can be affected by
+vacancies, repairs, insurance, taxes,
+management expenses and interest rate
+changes. Assess the full property cash flow.
+</p>
+</details>
+
+<details>
+<summary>Are Fintrava calculator results guaranteed?</summary>
+<p>
+No. The calculations are estimates based
+on the figures and assumptions entered.
+Your mortgage provider's actual figures
+may differ.
+</p>
+</details>
+</div>
+
+<h2 id="conclusion">
+16. Final Thoughts
+</h2>
+
+<p>
+An interest-only mortgage can provide a
+different approach to financing residential
+and rental properties, but the outstanding
+capital must never be overlooked.
+</p>
+
+<p>
+Whether you are considering a residential
+interest-only mortgage, a part-and-part
+arrangement or buy-to-let financing,
+understanding monthly interest costs
+and your eventual capital repayment
+is essential.
+</p>
+
+<p>
+Use the appropriate Fintrava calculator,
+review your mortgage agreement and
+consider how you will repay the outstanding
+balance before committing to a mortgage
+strategy.
+</p>
+
+<div class="highlight">
+<strong>Understand your mortgage before
+making your next financial decision.</strong>
+Explore Fintrava's financial tools and
+make informed comparisons using
+realistic mortgage figures.
+</div>
+
+<div class="sources">
+<h3>Official UK Mortgage Information and Sources</h3>
+
+<p>
+The following resources provide additional
+information about interest-only mortgages,
+repayment strategies and UK mortgage rules.
+</p>
+
+<ul>
+<li>
+<a href="https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+target="_blank" rel="noopener noreferrer">
+MoneyHelper: Interest-only and repayment mortgages explained
+</a>
+</li>
+
+<li>
+<a href="https://www.moneyhelper.org.uk/en/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage"
+target="_blank" rel="noopener noreferrer">
+MoneyHelper: Ways of repaying an interest-only mortgage
+</a>
+</li>
+
+<li>
+<a href="https://www.handbook.fca.org.uk/handbook/mcob11"
+target="_blank" rel="noopener noreferrer">
+FCA Handbook: Responsible mortgage lending
+</a>
+</li>
+
+<li>
+<a href="https://www.fca.org.uk/consumers/financial-impact-rising-costs-living/support-mortgages-interest-rates"
+target="_blank" rel="noopener noreferrer">
+FCA: Support available for mortgages
+</a>
+</li>
+
+<li>
+<a href="https://www.ukfinance.org.uk/mortgages/interest-only-mortgages"
+target="_blank" rel="noopener noreferrer">
+UK Finance: Interest-only mortgages
+</a>
+</li>
+
+<li>
+<a href="https://www.financial-ombudsman.org.uk/consumers/complaints-can-help/mortgages/interest-mortgages"
+target="_blank" rel="noopener noreferrer">
+Financial Ombudsman Service: Interest-only mortgages
+</a>
+</li>
+</ul>
+</div>
+
+<div class="disclaimer">
+<strong>Financial Disclaimer:</strong>
+This article is provided by Fintrava for
+general educational and informational
+purposes only. It does not constitute
+personalised mortgage, financial, tax
+or investment advice.
+
+All figures are illustrative estimates.
+Actual mortgage payments, lending
+eligibility, repayment strategies,
+interest rates and fees depend on
+your lender's terms and individual
+circumstances.
+
+Always check your mortgage agreement
+and speak to your lender or an
+appropriately qualified professional
+before making financial decisions.
+
+Your home may be repossessed if you
+do not keep up repayments on your mortgage.
+</div>
+
+</article>
+
+<aside class="toc">
+<h3>In This Guide</h3>
+<ol>
+<li><a href="#mortgage-types">Three Calculator Options</a></li>
+<li><a href="#what-is">What Is Interest-Only?</a></li>
+<li><a href="#how-calculator-works">How the Calculator Works</a></li>
+<li><a href="#formula">Calculation Formula</a></li>
+<li><a href="#residential">Residential Mortgage</a></li>
+<li><a href="#part-and-part">Part-and-Part Mortgage</a></li>
+<li><a href="#buy-to-let">Buy-to-Let Mortgage</a></li>
+<li><a href="#compare">Mortgage Comparison</a></li>
+<li><a href="#repayment-plan">Repayment Strategies</a></li>
+<li><a href="#risks">Mortgage Risks</a></li>
+<li><a href="#switch">Switching Mortgage Type</a></li>
+<li><a href="#calculator-guide">Using the Calculator</a></li>
+<li><a href="#interest-vs-repayment">Interest vs Repayment</a></li>
+<li><a href="#related-calculators">Related Calculators</a></li>
+<li><a href="#faqs">FAQs</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ol>
+</aside>
+
+</div>
+</main>
+
+<footer class="footer">
+<a href="https://fintrava.online/" class="logo">
+fintrava<span>.</span>
+</a>
+
+<p>
+Fintrava provides practical financial calculators
+and educational resources to help people understand
+mortgages, money and financial decisions.
+</p>
+
+<p>
+<a href="https://fintrava.online/">Fintrava Home</a>
+&nbsp; | &nbsp;
+<a href="https://fintrava.online/uk/">UK Finance</a>
+</p>
+
+<p>© 2026 Fintrava. All rights reserved.</p>
+</footer>
+
+<script>
+(function(){
+ const progress=document.getElementById('progress');
+
+ function updateProgress(){
+  const total=document.documentElement.scrollHeight-window.innerHeight;
+  const value=total>0?(window.scrollY/total)*100:0;
+  progress.style.width=value+'%';
+ }
+
+ window.addEventListener('scroll',updateProgress,{passive:true});
+ updateProgress();
+})();
+</script>
+
+</body>
+</html>
